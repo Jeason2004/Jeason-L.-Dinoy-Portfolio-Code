@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jason L. Dinoy — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#intro">HOME</a>
+      <nav class="menu">
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Project</a>
+        <a class="btn small" href="#contact">Contact Info</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section id="intro" class="panel panel--hero">
+      <div class="container hero">
+        <h1>Welcome to my <span>Portfolio</span></h1>
+        
+       
+      </div>
+    </section>
+
+    <section id="contact-card" class="panel">
+      <div class="container card contact-card">
+        <img src="jeason.jpg" alt="Jason Dinoy portrait" class="avatar">
+        <div class="contact-info">
+          <h3>Jason L. Dinoy</h3>
+          <h3><b>BSIT - 2D</b>
+        </div>
+      </div>
+    </section>
+
+    
+    <section id="about" class="panel">
+      <div class="container card">
+        <h2>About Me</h2>
+        <p>
+          Hi, I'm <strong>Jeason L. Dinoy</strong>, a <strong>BSIT</strong> student who loves learning about technology.<br>
+          I enjoy building websites and improving my coding skills. I’m focused on <br> clean layouts,
+          accessibility, and responsive design.
+        </p>
+        <div class="actions">
+          <a class="btn ghost" href="#intro">Back</a>
+          <a class="btn" href="#skills">Next</a>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="skills" class="panel">
+      <div class="container card">
+        <h2>Skills</h2>
+        <ul class="skills">
+          <li>
+            <span class="badge">HTML</span>
+            Semantic structure, SEO-friendly markup
+          </li>
+          <li>
+            <span class="badge">CSS</span>
+            Responsive layouts, Flex/Grid, animations
+          </li>
+          <li>
+            <span class="badge">Figma</span>
+            Wireframing and UI prototyping
+          </li>
+        </ul>
+        <div class="actions">
+          <a class="btn ghost" href="#about">Back</a>
+          <a class="btn" href="#projects">Next</a>
+        </div>
+      </div>
+    </section>
+   
+    <section id="projects" class="panel">
+      <div class="container card project-card">
+        <div class="project-media">
+          <img src="fubu.jpg" alt="FUBU website preview">
+        </div>
+        <div class="project-copy">
+          <h2>FUBU Project Website</h2>
+          <p>
+            The FUBU project website showcases the brand’s streetwear collection and style.
+            It allows customers to explore products and shop online easily.
+          </p>
+          <div class="actions">
+            <a class="btn ghost" href="#skills">Back</a>
+            <a class="btn" href="#contact">Next</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="panel">
+      <div class="container card">
+        <h2>Contact Info</h2>
+        <p>Want to collaborate or say "Hi":</p>
+        <ul class="contact-list">
+          <li><strong>Phone:</strong> 0950-566-7619</li>
+          <li><strong>Email:</strong> jaysondinoy2@gmail.com</li>
+        </ul>
+        <div class="actions">
+          <a class="btn ghost" href="#projects">Back</a>
+          <a class="btn" href="#intro">Back to Top</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small> <span id="year"></span> Jason L. Dinoy Portfolio/All Right Reserved.</small>
+    </div>
+  </footer>
+  
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
